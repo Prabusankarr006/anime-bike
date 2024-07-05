@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="path"></div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Support</a></li>
+        </ul>
+        <div class="bike">
+            <li><img src="bile1.jpg" onclick="big('bile1.jpg');bg('violet')"></li>
+            <li><img src="bike2.jpeg" onclick="big('bike2.jpeg');bg('green')"></li>
+            <li><img src="bike3.webp" onclick="big('bike3.webp');bg('red')"></li>
+        </div> 
+        <div class="big_img">
+            <img src="bike2.jpeg" class="big">
+        </div>
+        <div class="content"> 
+            <p>A motorcycle can sing on the streets of a city.</p>
+            <h2>Motorcycles are the poetry of motion</h2>
+            <h5>Life is a journey. Enjoy the ride</h5>
+        </div>
+    </div>
+</body>
+<script>
+    function big(img) {
+        document.querySelector('.big').src = img;
+    }
+
+    function bg(background) {
+        const bg = document.querySelector('.container');
+        bg.style.background = background;
+    }
+</script>
+</html>
